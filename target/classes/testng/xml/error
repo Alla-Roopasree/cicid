@@ -1,0 +1,23 @@
+<suite parallel="tests" name="Suite">
+<suite parallel="methods" name="Suite">
+<groups>
+<<run>
+<include name="errorHandling"/>
+</run>
+</groups>
+//then methods in each test 
+<test thread-count=5 name="base">
+<classes>
+<class name="rahulshetty.Framework.Errorvalidationtest"/>
+</classes>
+</test>
+<test thread-count=5 name= "subimt order test">
+//thread count means how many run parallel
+<classes>
+<class name="rahulshetty.Framework.Submitordertest"/>
+</classes>
+</test>
+</suite>
+
+
+//for every group 1 xml file should be created
